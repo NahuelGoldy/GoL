@@ -1,0 +1,30 @@
+<div class="gol-wrapper">
+  <div class="row">
+    <h1 class="gol__title col-md-6">Game of life</h1>
+    <div class="gol__tools col-md-6 card">
+      <div class="row">
+        <button class="btn rounded-btn card-btn col-md-5" (click)="toggleGame()">{{ gameRunning ? 'Stop' : 'Start'}}</button>
+        <button class="btn rounded-btn card-btn col-md-5" (click)="resetGame()">Reset</button>
+      </div>
+      <div class="row">
+        <button class="btn rounded-btn card-btn col-md-5" (click)="increaseSpeed()">Increase speed</button>
+        <button class="btn rounded-btn card-btn col-md-5" (click)="decreaseSpeed()">Decrease speed</button>
+      </div>
+      <div class="row">
+        <h6 class="col-md-4">Speed: {{ intervalTime }}</h6>
+        <h4 class="col-md-8">Generation: {{ game.generation }}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="gol__content">
+    <table>
+      <tbody>
+        <tr *ngFor="let row of game.board">
+          <td *ngFor="let cell of row" class="item" (click)="toggleCell(cell, cell.cellColor)">
+            <div class="cell" [ngClass]="{dead: !cell.alive, alive: cell.alive}"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+.gol-wrapper {
+
+}
+
+.gol__title {
+  text-align: center;
+  color: #ff7f50;
+  font-size: 4em;
+  margin-top: 5%;
+}
+
+.gol__content {
+  text-align: center;
+  padding-left: 10%;
+  width: 100%;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+}
+
+.gol__tools {
+  padding: 2%;
+  text-align: center;
+}
+
+.item {
+  width: 15px;
+  height: 15px;
+  border: 0.5px solid;
+
+  &:hover .alive {
+    background-color: #5eb75e;
+    color: #5eb75e;
+  }
+
+  &:hover .dead {
+    background-color: #5eb75e;
+    color: #5eb75e;
+  }
+}
+
+.alive {
+  background-color: green;
+  color: green;
+}
+
+.dead {
+  background-color: white;
+  color: white;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+}
+
+.cell:before {
+}
+
+td {
+  margin: 0;
+  padding: 0;
+}
+
+.card-btn {
+  //width: 40%;
+  margin: 1%;
+}
+
+.card-btn:hover {
+  background-color: #00b3ee;
+  color: white;
+}
