@@ -18,3 +18,6 @@ Navigate to `http://localhost:4200/` and play :)
 
 You can stop it in its current state, increase/decrease its speed and reset the board anytime by clicking the buttons.
 
+[Conway's Game of Life wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+
+
